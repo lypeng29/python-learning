@@ -1,12 +1,12 @@
 python笔记，搭建web环境、数据库、发邮件等
 
 ## WEB部分
-###使用flask
+### 使用flask
 pip install flask
 编写server.py ww.py(注意文件名不能写成flask.py,否则无法导入包)
 这里的pip是自带的命令，我这里已将：D:\Python\Python36\Scripts添加到环境变量PATH，所以可以直接使用~
 
-###使用模板
+### 使用模板
 pip install jinja2(我这里不需要安装，自带的有)
 目录结构:
 web
@@ -17,8 +17,8 @@ web
 |-server.py
 |-ww.py
 
-##数据库部分
-###安装驱动
+## 数据库部分
+### 安装驱动
 pip install mysql-connector-python --allow-external mysql-connector-python
 
 //===========安装执行过程如下==================================
@@ -64,7 +64,7 @@ E:\www\test\python>
 那么OK，安装可以不用加这个参数了，以后直接`pip install mysql-connector-python`好了~
 我的版本是Python3.6.3
 
-###测试一下链接
+### 测试一下链接
 ```bash
 import mysql.connector
 conn = mysql.connector.connect(user='root',password='root',database='finmall')
@@ -74,7 +74,7 @@ values = cursor.fetchall()
 print(values)
 ```
 
-##邮件发送
+## 邮件发送
 
-###安装库
+### 安装库
 
