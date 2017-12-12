@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>home</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    {% if message %}
+    <p style="color:#f00">{{ message }}</p>
+    {% endif %}
+    <form action="/signin" method="post">
+        <p>
+            <input name="username" value="{{ username }}">
+        </p>
+        <p>
+            <input name="password" type="password">
+        </p>
+        <p>
+            <button type="submit">Sign In</button>
+        </p>
+    </form>
+</body>
+</html>
